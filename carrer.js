@@ -44,14 +44,15 @@ const validateForm = ()=>{
         message_err.textContent = "This field is required";
         message.classList.add("invalid");
        // return false;
-    } else if(!isNaN(mess)){
+    } 
+    else if(!isNaN(mess)){
         number.textContent = "Please enter an understandable message";
         message.classList.add("invalid");
     }
-     else if(!isNaN(mess).length >=1 ){
-        number.textContent = "Please enter an understandable message";
-        message.classList.add("invalid");
-    }
+    //  else if(!isNaN(mess).length >=1 ){
+    //     number.textContent = "Please enter an understandable message";
+    //     message.classList.add("invalid");
+    // }
     
     else if (mess.length >= 1 && mess.length < 30){
         elnths.textContent = "Please let your message to be more detailed";
