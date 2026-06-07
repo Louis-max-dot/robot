@@ -147,7 +147,7 @@ const validateForm = ()=>{
     //clear error message
     const inputs = document.querySelectorAll("input");
     inputs.forEach((input) => input.classList.remove("invalid"));
-    const errore = document.querySelectorAll(".error");
+    const errore = document.querySelectorAll(".erro");
     errore.forEach((error)=> error.textContent = "");
     const messages = document.querySelectorAll("textarea");
     messages.forEach((message) => message.classList.remove("invalid"));
@@ -155,7 +155,7 @@ const validateForm = ()=>{
     
     // first name validation
     const firstname = document.querySelector(".firstnam");
-    const firstname_err = document.querySelector(".firstname-err");
+    const firstname_err = document.querySelector(".firstname-er");
     const number = document.querySelector(".validity")
    
     if(firstname.value == ""){
@@ -171,7 +171,7 @@ const validateForm = ()=>{
     
     // Last name validation
     const lastname = document.querySelector(".lastnam");
-    const lastname_err = document.querySelector(".lastname-err");
+    const lastname_err = document.querySelector(".lastname-er");
 
     if(lastname.value == ""){
         lastname_err.textContent = "This field is required";
@@ -196,27 +196,27 @@ const validateForm = ()=>{
         // return false;
     }
 
-    const message = document.querySelector("#message");
-    const mess = document.querySelector("#message").value;
-    const message_err = document.querySelector(".message-err");
-    const elnths = document.querySelector(".length");
-    const numbere = document.querySelector(".num");
-    if (message.value == ""){
-        message_err.textContent = "This field is required";
-        message.classList.add("invalid");
+    const messag = document.querySelector("#messag");
+    const mess = document.querySelector("#messag").value;
+    const message_er = document.querySelector(".message-er");
+    const elnth = document.querySelector(".lengt");
+    const numbee = document.querySelector(".nu");
+    if (messag.value == ""){
+        message_er.textContent = "This field is required";
+        messag.classList.add("invalid");
        // return false;
     } else if(!isNaN(mess)){
-        numbere.textContent = "Please enter an understandable message";
-        message.classList.add("invalid");
+        numbee.textContent = "Please enter an understandable message";
+        messag.classList.add("invalid");
     }
-     else if(!isNaN(mess).length >=1 ){
-        numbere.textContent = "Please enter an understandable message";
-        message.classList.add("invalid");
-    }
+    //  else if(!isNaN(mess).length >=1 ){
+    //     numbere.textContent = "Please enter an understandable message";
+    //     message.classList.add("invalid");
+    // }
     
     else if (mess.length >= 1 && mess.length < 30){
-        elnths.textContent = "Please let your message to be more detailed";
-        message.classList.add("invalid");
+        elnth.textContent = "Please let your message to be more detailed";
+        messag.classList.add("invalid");
     }
       
      if(!isTick){ 

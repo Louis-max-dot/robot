@@ -10,20 +10,20 @@ html {
 
 .sucsess {
   background-color: yellowgreen;
-  color: var(--White);
+  color: black;
   width: 29%;
   height: 10rem;
   margin: 1% auto;
   margin-top: 1rem;
   padding: 2rem;
   border-radius: 0.7rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
   display: none;
 }
 .sucsess p {
   margin-top: 1rem;
   text-align: center;
-  margin-bottom: 100rem;
+  /* margin-bottom: 100rem; */
 }
 
 .sucsess-header {
@@ -43,13 +43,13 @@ html {
   margin-top: 1rem;
   padding: 2rem;
   border-radius: 0.7rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
   display: none;
 }
 .sucess p {
   margin-top: 1rem;
   text-align: center;
-  margin-bottom: 100rem;
+  /* margin-bottom: 100rem; */
 }
 .sucess-header {
   /* display: flex; */
@@ -614,6 +614,9 @@ textarea.invalid {
   .third {
     flex-direction: column;
   }
+  .forth{
+     margin: 1rem 1rem;
+  }
   .forth_h {
     flex-direction: column;
     text-align: center;
@@ -661,12 +664,16 @@ textarea.invalid {
     display: none;
   }
   .sucsess {
-    width: 50%;
-    height: 10rem;
+    width: 70%;
+    height: 9rem;
   }
   .sucess {
-    width: 50%;
-    height: 10rem;
-
+    width: 70%;
+    height: 9rem;
+  }
+  
+  #booke{
+    width: 90%;
+  padding: 2rem;
   }
 }
