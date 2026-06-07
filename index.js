@@ -105,7 +105,7 @@ ree.addEventListener('submit', (event)=>{
     if(!hasActiveErrors){
         // forms.classList.add('sucsess')
         success.style.display = 'block'
-         fore.style.display = 'none';
+        fore.style.display = 'none';
         forms.reset();
     }
     success.scrollIntoView({
